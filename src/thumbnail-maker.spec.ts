@@ -22,6 +22,9 @@ describe('thumbnailMaker', () => {
       .on('finish', () =>
         im(testThumbnail)
           .size((err, size) => {
+            if (err) {
+              throw err;
+            }
             assert.equal(size.height <= 400, true);
             assert.equal(size.width <= 400, true);
             done();
