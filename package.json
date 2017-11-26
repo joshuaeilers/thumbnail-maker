@@ -1,0 +1,24 @@
+{
+  "name": "thumbnail-maker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "pretest": "npm run tsc",
+    "test": "mocha build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/gm": "^1.17.33",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.53",
+    "mocha": "^4.0.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "gm": "^1.23.0"
+  }
+}
