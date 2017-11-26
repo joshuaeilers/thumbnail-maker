@@ -10,7 +10,8 @@ export const makeThumbnail = (
 ) => {
   return im(stream, '[0]')
     .setFormat('png')
-    .fuzz(1, true)
+    .crop(0, 0, 25, 50)
+    .crop(0, 0, -25, -50)
     .trim()
     .repage('+')
     .resize(maxWidth, maxHeight)
